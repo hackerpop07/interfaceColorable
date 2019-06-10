@@ -14,7 +14,7 @@ foreach ($shape as $value) {
     echo $value->show(), "<br>";
     echo "CalculateArea: ", $value->calculateArea(), "<br>";
     echo "CalculatePerimeter: ", $value->calculatePerimeter(), "<br>";
-    if ($value == new Square('Square 01', 4)) {
+    if ($value instanceof Colorable) {
         $value->howToColor();
     }
 }
